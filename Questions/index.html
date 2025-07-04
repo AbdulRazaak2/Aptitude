@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Logical Reasoning Questions</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    padding: 20px;
+    color: #222;
+    display: flex;
+    justify-content: center; /* center horizontally */
+  }
+  main {
+    max-width: 800px;
+    width: 100%;
+  }
+  .question {
+    background: #fff;
+    border-left: 5px solid #4a90e2;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    border-radius: 4px;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+  }
+  /* Staggered fade-in */
+  .question:nth-child(1) { animation-delay: 0.1s; }
+  .question:nth-child(2) { animation-delay: 0.3s; }
+  .question:nth-child(3) { animation-delay: 0.5s; }
+  .question:nth-child(4) { animation-delay: 0.7s; }
+  .question:nth-child(5) { animation-delay: 0.9s; }
+  .question:nth-child(6) { animation-delay: 1.1s; }
+  .question:nth-child(7) { animation-delay: 1.3s; }
+  .question:nth-child(8) { animation-delay: 1.5s; }
+  .question:nth-child(9) { animation-delay: 1.7s; }
+  .question:nth-child(10) { animation-delay: 1.9s; }
+  .question:nth-child(11) { animation-delay: 2.1s; }
+  .question:nth-child(12) { animation-delay: 2.3s; }
+  .question:nth-child(13) { animation-delay: 2.5s; }
+  .question:nth-child(14) { animation-delay: 2.7s; }
+  .question:nth-child(15) { animation-delay: 2.9s; }
+  .question:nth-child(16) { animation-delay: 3.1s; }
+  .question:nth-child(17) { animation-delay: 3.3s; }
+  .question:nth-child(18) { animation-delay: 3.5s; }
+  .question:nth-child(19) { animation-delay: 3.7s; }
+  .question:nth-child(20) { animation-delay: 3.9s; }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+
+  .question p {
+    margin: 0 0 12px 0;
+    font-size: 16px;
+    white-space: pre-line;
+  }
+  .options label {
+    display: block;
+    margin: 5px 0;
+    padding-left: 10px;
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.3s ease;
+  }
+  .options input[type="radio"] {
+    margin-right: 8px;
+    cursor: pointer;
+    vertical-align: middle;
+  }
+
+  .options input[type="radio"]:checked + span {
+    animation: optionSelect 0.3s forwards;
+    color: #4a90e2;
+    font-weight: 600;
+  }
+  @keyframes optionSelect {
+    0% { transform: scale(1); color: inherit; }
+    50% { transform: scale(1.1); color: #4a90e2; }
+    100% { transform: scale(1); color: #4a90e2; }
+  }
+
+  .clear-btn {
+    margin-top: 10px;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+  }
+  .clear-btn:hover {
+    background: #c0392b;
+  }
+</style>
+</head>
+<body>
+<main>
+
+<!-- Question 1 -->
+<div class="question">
+  <p>A is B's sister. C is B's mother. D is C's father. E is D's mother. Then, how is A related to D?</p>
+  <div class="options">
+    <label><input type="radio" name="q1" value="Grandmother"><span>Grandmother</span></label>
+    <label><input type="radio" name="q1" value="Grandfather"><span>Grandfather</span></label>
+    <label><input type="radio" name="q1" value="Daughter"><span>Daughter</span></label>
+    <label><input type="radio" name="q1" value="Granddaughter"><span>Granddaughter</span></label>
+  </div>
+  <button class="clear-btn" data-question="q1">Clear</button>
+</div>
+
+<!-- Question 2 -->
+<div class="question">
+  <p>P is the mother of K; K is the sister of D; D is the father of J. How is P related to J?</p>
+  <div class="options">
+    <label><input type="radio" name="q2" value="Mother"><span>Mother</span></label>
+    <label><input type="radio" name="q2" value="Grandmother"><span>Grandmother</span></label>
+    <label><input type="radio" name="q2" value="Aunt"><span>Aunt</span></label>
+    <label><input type="radio" name="q2" value="Data inadequate"><span>Data inadequate</span></label>
+  </div>
+  <button class="clear-btn" data-question="q2">Clear</button>
+</div>
+
+<!-- Question 3 -->
+<div class="question">
+  <p>A's son B is married with C whose sister D is married to E the brother of B. How D is related to A?</p>
+  <div class="options">
+    <label><input type="radio" name="q3" value="Sister"><span>a) Sister</span></label>
+    <label><input type="radio" name="q3" value="Daughter-in-law"><span>c) Daughter's-in-law</span></label>
+    <label><input type="radio" name="q3" value="Sister-in-law"><span>b) Sister-in-law</span></label>
+    <label><input type="radio" name="q3" value="Cousin"><span>d) Cousin</span></label>
+  </div>
+  <button class="clear-btn" data-question="q3">Clear</button>
+</div>
+
+<!-- Question 4 -->
+<div class="question">
+  <p>Conditions:<br>
+  I is brother of J. K is father of I<br>
+  L is brother of M<br>
+  M is daughter of J , then  Who is I to L?</p>
+  <div class="options">
+    <label><input type="radio" name="q4" value="Brother"><span>Brother</span></label>
+    <label><input type="radio" name="q4" value="Grandfather"><span>Grandfather</span></label>
+    <label><input type="radio" name="q4" value="Son"><span>Son</span></label>
+    <label><input type="radio" name="q4" value="Uncle"><span>Uncle</span></label>
+  </div>
+  <button class="clear-btn" data-question="q4">Clear</button>
+</div>
+
+<!-- Question 5 -->
+<div class="question">
+  <p>If A is the brother of B; B is the sister of C; and C is the father of D, how D is related to A?</p>
+  <div class="options">
+    <label><input type="radio" name="q5" value="Brother"><span>Brother</span></label>
+    <label><input type="radio" name="q5" value="Sister"><span>Sister</span></label>
+    <label><input type="radio" name="q5" value="Nephew"><span>Nephew</span></label>
+    <label><input type="radio" name="q5" value="Cannot be determined"><span>Cannot be determined</span></label>
+  </div>
+  <button class="clear-btn" data-question="q5">Clear</button>
+</div>
+
+<!-- Question 6 -->
+<div class="question">
+  <p>Pointing to a photograph of a boy Suresh said, "He is the son of the only son of my mother." How is Suresh related to that boy?</p>
+  <div class="options">
+    <label><input type="radio" name="q6" value="Brother"><span>Brother</span></label>
+    <label><input type="radio" name="q6" value="Uncle"><span>Uncle</span></label>
+    <label><input type="radio" name="q6" value="Cousin"><span>Cousin</span></label>
+    <label><input type="radio" name="q6" value="Father"><span>Father</span></label>
+  </div>
+  <button class="clear-btn" data-question="q6">Clear</button>
+</div>
+
+<!-- Question 7 -->
+<div class="question">
+  <p>Pointing to a photograph. Bajpai said, "He is the son of the only daughter of the father of my brother." How Bajpai is related to the man in the photograph?</p>
+  <div class="options">
+    <label><input type="radio" name="q7" value="Nephew"><span>Nephew</span></label>
+    <label><input type="radio" name="q7" value="Brother"><span>Brother</span></label>
+    <label><input type="radio" name="q7" value="Father"><span>Father</span></label>
+    <label><input type="radio" name="q7" value="Maternal Uncle"><span>Maternal Uncle</span></label>
+  </div>
+  <button class="clear-btn" data-question="q7">Clear</button>
+</div>
+
+<!-- Question 8 -->
+<div class="question">
+  <p>Pointing to a person, Deepak said, "His only brother is the father of my daughter's father". How is the person related to Deepak?</p>
+  <div class="options">
+    <label><input type="radio" name="q8" value="Father"><span>Father</span></label>
+    <label><input type="radio" name="q8" value="Grandfather"><span>Grandfather</span></label>
+    <label><input type="radio" name="q8" value="Uncle"><span>Uncle</span></label>
+    <label><input type="radio" name="q8" value="Brother-in-law"><span>Brother-in-law</span></label>
+  </div>
+  <button class="clear-btn" data-question="q8">Clear</button>
+</div>
+
+<!-- Question 9 -->
+<div class="question">
+  <p>Pointing to a girl Sandeep said, "She is the daughter of the only sister of my father." How is Sandeep related to the girl?</p>
+  <div class="options">
+    <label><input type="radio" name="q9" value="Uncle"><span>Uncle</span></label>
+    <label><input type="radio" name="q9" value="Cousin"><span>Cousin</span></label>
+    <label><input type="radio" name="q9" value="Father"><span>Father</span></label>
+    <label><input type="radio" name="q9" value="Grandfather"><span>Grandfather</span></label>
+  </div>
+  <button class="clear-btn" data-question="q9">Clear</button>
+</div>
+
+<!-- Question 10 -->
+<div class="question">
+  <p>Introducing a woman, Shashank said, "She is the mother of the only daughter of my son." How that woman is related to Shashank?</p>
+  <div class="options">
+    <label><input type="radio" name="q10" value="Daughter"><span>Daughter</span></label>
+    <label><input type="radio" name="q10" value="Sister-in-law"><span>Sister-in-law</span></label>
+    <label><input type="radio" name="q10" value="Wife"><span>Wife</span></label>
+    <label><input type="radio" name="q10" value="Daughter-in-law"><span>Daughter-in-law</span></label>
+  </div>
+  <button class="clear-btn" data-question="q10">Clear</button>
+</div>
+
+<!-- Question 11 -->
+<div class="question">
+  <p>If A + B means A is the mother of B; A - B means A is the brother B; A % B means A is the father of B and A x B means A is the sister of B, which of the following shows that P is the maternal uncle of Q?</p>
+  <div class="options">
+    <label><input type="radio" name="q11" value="Q - N + M x P"><span>Q - N + M x P</span></label>
+    <label><input type="radio" name="q11" value="P + S x N - Q"><span>P + S x N - Q</span></label>
+    <label><input type="radio" name="q11" value="P - M + N x Q"><span>P - M + N x Q</span></label>
+    <label><input type="radio" name="q11" value="Q - S % P"><span>Q - S % P</span></label>
+  </div>
+  <button class="clear-btn" data-question="q11">Clear</button>
+</div>
+
+<!-- Question 12 -->
+<div class="question">
+  <p>If A + B means A is the brother of B; A - B means A is the sister of B and A x B means A is the father of B. Which of the following means that C is the son of M?</p>
+  <div class="options">
+    <label><input type="radio" name="q12" value="M - N x C + F"><span>M - N x C + F</span></label>
+    <label><input type="radio" name="q12" value="F - C + N x M"><span>F - C + N x M</span></label>
+    <label><input type="radio" name="q12" value="N + M - F x C"><span>N + M - F x C</span></label>
+    <label><input type="radio" name="q12" value="M x N - C + F"><span>M x N - C + F</span></label>
+  </div>
+  <button class="clear-btn" data-question="q12">Clear</button>
+</div>
+
+<!-- Question 13 -->
+<div class="question">
+  <p>If A + B means A is the brother of B; A % B means A is the father of B and A x B means A is the sister of B. Which of the following means M is the uncle of P?</p>
+  <div class="options">
+    <label><input type="radio" name="q13" value="M % N x P"><span>M % N x P</span></label>
+    <label><input type="radio" name="q13" value="N x P % M"><span>N x P % M</span></label>
+    <label><input type="radio" name="q13" value="M + S % R % P"><span>M + S % R % P</span></label>
+    <label><input type="radio" name="q13" value="M + K % T x P"><span>M + K % T x P</span></label>
+  </div>
+  <button class="clear-btn" data-question="q13">Clear</button>
+</div>
+
+<!-- Question 14 -->
+<div class="question">
+  <p>If A $ B means A is the brother of B; A @ B means A is the wife of B; A # B means A is the daughter of B and A * B means A is the father of B, which of the following indicates that U is the father-in-law of P?</p>
+  <div class="options">
+    <label><input type="radio" name="q14" value="P @ Q $ T # U * W"><span>P @ Q $ T # U * W</span></label>
+    <label><input type="radio" name="q14" value="P @ W $ Q * T # U"><span>P @ W $ Q * T # U</span></label>
+    <label><input type="radio" name="q14" value="P @ Q $ W * T # U"><span>P @ Q $ W * T # U</span></label>
+    <label><input type="radio" name="q14" value="P @ Q $ T # W * U"><span>P @ Q $ T # W * U</span></label>
+  </div>
+  <button class="clear-btn" data-question="q14">Clear</button>
+</div>
+
+<!-- Question 15 -->
+<div class="question">
+  <p>A $ B means A is the father of B; A # B means A is the sister of B; A * B means A is the daughter of B and A @ B means A is the brother of B. Which of the following indicates that M is the wife of Q?</p>
+  <div class="options">
+    <label><input type="radio" name="q15" value="Q $ R # T @ M"><span>Q $ R # T @ M</span></label>
+    <label><input type="radio" name="q15" value="Q $ R @ T # M"><span>Q $ R @ T # M</span></label>
+    <label><input type="radio" name="q15" value="Q $ R * T # M"><span>Q $ R * T # M</span></label>
+    <label><input type="radio" name="q15" value="Q $ R @ T * M"><span>Q $ R @ T * M</span></label>
+  </div>
+  <button class="clear-btn" data-question="q15">Clear</button>
+</div>
+
+</main>
+
+<script>
+  // Clear button functionality
+  document.querySelectorAll('.clear-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      const qName = button.getAttribute('data-question');
+      document.querySelectorAll(`input[name="${qName}"]`).forEach(radio => {
+        radio.checked = false;
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
